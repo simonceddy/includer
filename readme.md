@@ -25,3 +25,5 @@ $returnedValue = Eddy\Includer\Includer::load('my_included_file.php');
 // Includer also includes a wrapper function for this process
 $returnedValue = include_file('my_included_file.php');
 ```
+
+You can pass variables to the includer

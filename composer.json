@@ -21,6 +21,7 @@
     },
     "require": {},
     "require-dev": {
+        "php": ">=7.1",
         "symfony/var-dumper": "^4.3"
     }
 }
