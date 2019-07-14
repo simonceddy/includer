@@ -26,4 +26,17 @@ $returnedValue = Eddy\Includer\Includer::load('my_included_file.php');
 $returnedValue = include_file('my_included_file.php');
 ```
 
-You can pass variables to the includer
+You can pass an associative array of variables to the includer. The contents of this array will be extracted, allowing passing named variables to the included file.
+
+```php
+// my_included_file.php
+$data['my_cool_key'] => 'My Great Value';
+```
+
+```php
+$data = [];
+
+include_file('my_included_file.php', ['data' => $data]);
+
+var_dump($data); // array(1) { "my_cool_key"] => string('My great Value') }
+```
