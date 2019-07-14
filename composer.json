@@ -14,7 +14,10 @@
     "autoload": {
         "psr-4": {
             "Eddy\\Includer\\": "src"
-        }
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "require": {},
     "require-dev": {
